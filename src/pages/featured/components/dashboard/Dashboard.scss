@@ -1,0 +1,120 @@
+.dashboard-container {
+  & { height: 400px; width: 100%; background: linear-gradient(286deg, rgba(201, 203, 144, 1) 0%, rgba(221, 79, 64, 1) 34%, rgba(69, 142, 218, 1) 94%); padding: 0 5%; font-family: "Lato", sans-serif; display: flex; flex-direction: column; justify-content: center; }
+  .dashboard-heading { font-size: 24px; font-family: "Lato", sans-serif; font-weight: 600; color: #fff; margin-bottom: 2rem; }
+  .dashboard-components {
+    & { display: flex; align-items: center; justify-content: space-between; }
+    .component1 {
+      & { display: flex; flex-direction: column; height: 265px; width: 400px; background-color: #fff; border-radius: 21px; padding: 25px; }
+      .component1-heading {
+        & { font-size: 20px; font-weight: 700; margin-bottom: 25px; }
+      }
+      .component1-container {
+        & { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+        .network1 {
+          & { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 170px; width: 115px; border: 1px solid #eee; border-radius: 8px; }
+          .network-profile {
+            & { display: flex; flex-direction: column; align-items: center; width: 100%; }
+            .add-network {
+              & { height: 90px; display: flex; align-items: center;font-size: 100px; color: #8b8b8b; cursor: pointer; }
+            }
+          }
+        }
+        .followers {
+          & { border: 1px solid #eee; width: 100%; text-align: center; margin-top: 1rem; }
+          p { font-size: 12px; }
+          span { font-weight: 600; }
+        }
+        .network2 {
+          & { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 170px; width: 115px; border: 1px solid #eee; border-radius: 8px; }
+          .network-profile {
+            & { display: flex; flex-direction: column; align-items: center; width: 100%; }
+            .add-network {
+              & { height: 90px; display: flex; align-items: center;font-size: 100px; color: #8b8b8b; cursor: pointer; }
+            }
+          }
+        }
+        .followers {
+          & { border-top: 1px solid #eee; width: 100%; text-align: center; margin-top: 1rem; }
+          p { font-size: 12px; }
+          span { font-weight: 600; }
+        }
+        .network3 {
+          & { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 170px; width: 115px; border: 1px solid #eee; border-radius: 8px; }
+          .network-profile {
+            & { display: flex; flex-direction: column; align-items: center; width: 100%; }
+            .add-network {
+              & { height: 90px; display: flex; align-items: center;font-size: 100px; color: #8b8b8b; cursor: pointer; }
+            }
+          }
+        }
+        .followers {
+          & { border: 1px solid #eee; width: 100%; text-align: center; margin-top: 1rem; }
+          p { font-size: 12px; }
+          span { font-weight: 600; }
+        }
+      }
+    }
+    .component2 {
+      & { display: flex; flex-direction: column; height: 265px; width: 400px; background-color: #fff; border-radius: 10px; padding: 25px; }
+      .component2-heading {
+        & {}
+        h1 { font-size: 21px; margin-bottom: 24px; }
+      } 
+      .component2-container {
+        & { height: 80%; display: flex; align-items: center; justify-content: space-between; width: 100%; }
+        .user1 {
+          & { height: 170px; width: 115px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; border: 1px solid #eee; border-radius: 8px; }
+          .user-img {
+            & { display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 40px; object-fit: cover; height: 80px; width: 80px; }
+            img { height: 100px; width: 130px; object-fit: cover; border-radius: 100%; }
+          }
+          .trophy {
+            & { border-top: 1px solid #eee; width: 100%; display: flex; align-items: center; justify-content: center; }
+          }
+        }
+        .user2 {
+          & { height: 170px; width: 115px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; border: 1px solid #eee; border-radius: 8px; }
+          .user-img {
+            & { display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 40px; object-fit: cover; height: 80px; width: 80px; }
+            img { height: 120px; width: 120; object-fit: contain; }
+          }
+          .trophy {
+            & { border-top: 1px solid #eee; width: 100%; display: flex; align-items: center; justify-content: center; }
+          }
+        }
+        .user3 {
+          & { height: 170px; width: 115px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; border: 1px solid #eee; border-radius: 8px; }
+          .user-img {
+            & { display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 40px; object-fit: cover; height: 80px; width: 80px; }
+            img { height: 120px; width: 120; object-fit: contain; }
+          }
+          .trophy {
+            & { border-top: 1px solid #eee; width: 100%; display: flex; align-items: center; justify-content: center; }
+          }
+        }
+      }
+    }
+    .component3 {
+      & { display: flex; flex-direction: column; height: 265px; width: 400px; background-color: #fff; border-radius: 10px; }
+      .component3-heading {
+        & {}
+        h1 { font-size: 20px; font-weight: 700; padding: 24px; margin: 0; }
+      }
+      .component3-container {
+        & { display: flex; flex-direction: column; align-items: center; justify-content: space-around; background-color: #1d8ac0; height: 100%; border-radius: 0 0 10px 10px; }
+        .paragraph {
+          & { text-align: center; }
+          P {
+            & { font-size: 16px; font-weight: 600; color: #fff; }
+          }
+        }
+        .creator-btn {
+          & { width: 90%; }
+          button {
+            & { background-color: #cd4a4a; border: 2px solid #cd4a4a; cursor: pointer; width: 100%; border-radius: 4px; margin: 0; padding: 8px;position: relative; color: #fff; font-size: 16px; font-weight: 600; }
+          }
+        }
+      }
+    }
+  }
+}

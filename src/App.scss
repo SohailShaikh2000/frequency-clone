@@ -1,0 +1,36 @@
+@import './pages/mainPage/MainPage.scss';
+@import './components/mainPage/firstComponent/FirstMainPageComponent.scss';
+@import './components/mainPage/secondComponent/SecondComponent.scss';
+@import './components/mainPage/thirdComponent//ThirdComponent.scss';
+@import './components/mainPage/fourthComponent/FourthComponent.scss';
+@import './components/mainPage/footer/Footer.scss';
+@import './pages/loginPage/LoginPage.scss';
+@import './pages/featured/components/navbar/Navbar.scss';
+@import './pages/featured/Featured.scss';
+@import './pages/featured/components/dashboard/Dashboard.scss';
+@import './pages/featured/components/navbar/Navbar.scss';
+
+$fontLato: "Lato", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 775px;
+  max-width: 1600px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.main {
+  & {
+    height: 50%;
+  }
+}

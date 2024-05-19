@@ -1,0 +1,30 @@
+.third-component-container {
+  & { width: 100%; padding: 5%; display: flex; background-color: #f6f7fa; gap: 5%; }
+  .make-friends {
+    & { background-color: #fff; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 50px 40px; border-radius: 10px; height: 450px; font-family: "Lato", sans-serif; }
+    .title {
+      & { text-align: center; font-size: 15px; }
+    }
+    .paragraph {
+      & { text-align: center; }
+    }
+  }
+  .make-money {
+    & { background-color: #fff; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 50px 40px; border-radius: 10px; height: 450px; font-family: "Lato", sans-serif; }
+    .title {
+      & { text-align: center; font-size: 15px; }
+    }
+    .paragraph {
+      & { text-align: center; }
+    }
+  }
+  .chat-and-ar {
+    & { background-color: #fff; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 50px 40px; border-radius: 10px; height: 450px; font-family: "Lato", sans-serif; }
+    .title {
+      & { text-align: center; font-size: 15px; }
+    }
+    .paragraph {
+      & { text-align: center; }
+    }
+  }
+}

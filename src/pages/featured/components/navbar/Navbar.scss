@@ -1,0 +1,31 @@
+.navbar-wrapper {
+  & { height: 56px; width: 100%; background-color: #f6f7fa; }
+  .navbar-container {
+    & { height: 100%; width: 100%; display: flex; align-items: center; background-color: #fff; font-family: "Lato", sans-serif; padding: 0 32px; }
+    .left-logo {
+      & { height: 100%; display: flex; align-items: center; }
+      img { object-fit: contain; max-height: 40px; }
+    }
+    .nav-list {
+      & { width: 20%; }
+      ul {
+        & { display: flex; align-items: center; justify-content: space-around; }
+        li { list-style-type: none; font-size: 15px; font-weight: 700; text-transform: uppercase; color: #4a4a4a; cursor: pointer; }
+      }
+    }
+    .search-bar {
+      & { width: 70%; height: 70%; display: flex; align-items: center; }
+      input {
+        & { width: 100%; height: 100%; padding: 0 3rem; background: url('../../../../assets/Search.svg'); background-repeat: no-repeat; background-position-y: center; background-position-x: 14px; border: 2px solid #d6d6d6; border-radius: 4px; outline: none; font-size: 16px; }
+        &::placeholder { font-size: 16px; text-transform: uppercase; font-weight: 600; color: #d6d6d6; }
+      }
+    }
+    .nav-icons {
+      & { width: 9%; display: flex; align-items: center; justify-content: space-around; }
+      .profile {
+        & { height: 45px; width: 45px; border-radius: 50%; background-color: #9f9f9f; }
+        span { height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; color: #eaeaea; font-size: 23px; font-weight: 700; }
+      }
+    }
+  }
+}

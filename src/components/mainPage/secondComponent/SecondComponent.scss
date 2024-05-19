@@ -1,0 +1,16 @@
+.second-component-container {
+  & { display: flex; width: 100%; align-items: center; justify-content: center; gap: 10%; padding: 36px; background-color: #f6f7fa; }
+  .left-side {
+    & { width: 40%; }
+    img { width: 100%; object-fit: contain; margin: 64px 0; }
+  }
+  .right-side {
+    & { width: 40%; display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+    .title {
+      & { width: 35ch; font-family: "Lato", sans-serif; font-size: 24px; }
+    }
+    .info {
+      & { width: 90%; font-family: "Lato", sans-serif; font-size: 21px; }
+    }
+  }
+}

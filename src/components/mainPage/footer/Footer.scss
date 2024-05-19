@@ -1,0 +1,13 @@
+.footer-wrapper {
+  & { width: 100%; background-color: #27252d; }
+  .footer-container {
+    & { width: 95%; padding: 65px 16px; background-color: #27252d; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  }
+  .footer-links {
+    & { display: flex; align-items: center; gap: 12rem; color: #fff; text-decoration: underline; font-family: "Lato", sans-serif; font-size: 28px; padding: 32px 0; }
+  }
+  .footer-copyright {
+    & { font-family: "Lato", sans-serif; font-size: 21px; color: #57606f; font-weight: 400; }
+    span { font-size: 14px; }
+  }
+}
