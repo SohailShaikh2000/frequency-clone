@@ -11,10 +11,28 @@ const LoginPage = () => {
   const [opened, setOpened] = useState(true)
   const [loginEmail, setLoginEmail] = useState('')
   const [loginPassword, setLoginPassword] = useState('')
-  const [signUpName, setSignUpName] = useState('')
-  const [signUpEmail, setSignUpEmail] = useState('')
-  const [signUpPassword, setSignUpPassword] = useState('')
-  const [signUpConfirmPassword, setSignUpConfirmPassword] = useState('')
+  // const [signUpName, setSignUpName] = useState('')
+  // const [signUpEmail, setSignUpEmail] = useState('')
+  // const [signUpPassword, setSignUpPassword] = useState('')
+  // const [signUpConfirmPassword, setSignUpConfirmPassword] = useState('')
+
+  const [userData, setUserData] = useState({
+    name:"", email:"", password:"", confirmPassword:"",
+  })
+
+
+  const handleSignIn = () => {
+    setOpened(true)
+  }
+  
+  useEffect(() => {
+    const data = window.localStorage.getItem("USER_DATA")
+    if (data !== null ) setUserData(JSON.parse(data))
+}, [])
+
+  useEffect(() => {
+    window.localStorage.setItem("USER_DATA", JSON.stringify(userData))
+  }, [userData])
 
   const navigate = useNavigate()
 
@@ -23,7 +41,7 @@ const LoginPage = () => {
   // }, [])
 
   const checkLoginBtnDisabled = () => {
-    if (loginEmail.trim().length > 0 && loginPassword.trim().length > 0) {
+    if (userData.email === loginEmail && loginEmail !== "" && loginPassword !== "" && userData.password === loginPassword) {
       return false
     } else {
       return true
@@ -31,17 +49,25 @@ const LoginPage = () => {
   }
 
   const checkSignUpDisabled = () => {
-    if (signUpName.trim().length > 0 && signUpEmail.trim().length > 0) {
+    if (userData.name.trim().length > 0 && userData.email.trim().length > 0) {
       return false
     } else {
       return true
     }
   }
 
+ 
   const handleSubmit = () => {
     navigate('/featured')
   }
 
+  let name, value
+  const handleInput = (e) => {
+    name = e.target.name;
+    value = e.target.value
+
+    setUserData({...userData, [name]:value})
+  }
 
   return (
     <div className='login-page-wrapper'>
@@ -53,12 +79,12 @@ const LoginPage = () => {
           <div className="registration-form">
             <h1>Register for free</h1>
             <div className="sign-up-inputs">
-              <input type="text" placeholder='Name' value={signUpName} onChange={(e) => setSignUpName(e.target.value)} />
-              <input type="email" placeholder='Email' value={signUpEmail} onChange={(e) => setSignUpEmail(e.target.value)} />
-              <input type="password" placeholder='Password' value={signUpPassword} onChange={(e) => setSignUpPassword(e.target.value)} />
-              <input type="password" placeholder='Confirm Password' value={signUpConfirmPassword} onChange={(e) => setSignUpConfirmPassword(e.target.value)} />
+              <input type="text" placeholder='Name' name='name' value={userData.name} onChange={handleInput} />
+              <input type="email" placeholder='Email' name='email' value={userData.email} onChange={handleInput} />
+              <input type="password" placeholder='Password' name='password' value={userData.password} onChange={handleInput} />
+              <input type="password" placeholder='Confirm Password' name='confirmPassword' value={userData.confirmPassword} onChange={handleInput} />
               {
-                signUpPassword.trim().length > 0 && signUpConfirmPassword.trim().length > 0 && signUpPassword !== signUpConfirmPassword ?
+                userData.password.trim().length > 0 && userData.confirmPassword.trim().length > 0 && userData.password !== userData.confirmPassword ?
                   <p style={{ fontSize: "12px", color: "red", position: "absolute", bottom: "-20px" }}>Password is not matching</p>
                   :
                   null
@@ -66,7 +92,7 @@ const LoginPage = () => {
             </div>
           </div>
           <div className="submit-btn">
-            <button className="submit" disabled={checkSignUpDisabled()}>Join</button>
+            <button className="submit" disabled={checkSignUpDisabled()} onClick={handleSignIn}>Join</button>
           </div>
         </div>
         <div className="right-side-container">

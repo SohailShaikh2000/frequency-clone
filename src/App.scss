@@ -9,6 +9,8 @@
 @import './pages/featured/Featured.scss';
 @import './pages/featured/components/dashboard/Dashboard.scss';
 @import './pages/featured/components/navbar/Navbar.scss';
+@import './pages/featured/components/featuredNavbar/FeaturedNav.scss';
+@import './Modals/CreateNetwork/CreateNetworkModal.scss';
 
 $fontLato: "Lato", sans-serif;
 
@@ -27,6 +29,7 @@ body {
   height: 100%;
   width: 100%;
   border: 1px solid red;
+  position: relative;
 }
 
 .main {

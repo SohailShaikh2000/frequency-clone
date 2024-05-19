@@ -1,0 +1,18 @@
+.featured-nav-container {
+  & { padding: 21px; display: flex; align-items: center; justify-content: space-between; font-family: "Lato", sans-serif; }
+  .nav-list-item-left {
+    & { display: flex; align-items: center; justify-content: space-around; width: 30%; font-size: 21px; font-weight: 400; }
+    p {
+      & { cursor: pointer; }
+      &:hover { border-bottom: 2px solid #cd4a4a; }
+    }
+  }
+  .nav-list-item-right {
+    & { width: 8%; font-size: 21px; font-weight: 400; }
+    .nav-list-create-network {
+      & { display: flex; align-items: center; justify-content: space-around; cursor: pointer; }
+      button { height: 30px; width: 30px; text-align: center; background: none; border: 3px solid #cd4a4a; color: #cd4a4a; font-size: 24px; border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+      p { color: #cd4a4a; cursor: pointer; }
+    }
+  }
+}

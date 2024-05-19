@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../featured/components/navbar/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
+import FeaturedNav from './components/featuredNavbar/FeaturedNav'
 import '../../App.scss'
 
 const Featured = () => {
@@ -9,6 +10,7 @@ const Featured = () => {
       <div className='featured-container'>
         <Navbar />
         <Dashboard />
+        <FeaturedNav />
       </div>
     </div>
   )
