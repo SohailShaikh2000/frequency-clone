@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="photo_video_icon" data-name="photo/video icon" transform="translate(13762 15454)">
+    <g id="image" transform="translate(-13759 -15451.5)">
+      <path id="Path_1249" data-name="Path 1249" d="M9.167,10.5a3.167,3.167,0,1,0,3.167,3.167A3.167,3.167,0,0,0,9.167,10.5ZM8.111,13.667a1.056,1.056,0,1,1,1.056,1.056A1.056,1.056,0,0,1,8.111,13.667Z" transform="translate(-1.778 -1.778)" fill-rule="evenodd"/>
+      <path id="Path_1250" data-name="Path 1250" d="M3.167,4.5A3.167,3.167,0,0,0,0,7.667V20.333A3.167,3.167,0,0,0,3.167,23.5h19a3.167,3.167,0,0,0,3.167-3.167V7.667A3.167,3.167,0,0,0,22.166,4.5Zm19,2.111h-19A1.056,1.056,0,0,0,2.111,7.667V20.333a1.056,1.056,0,0,0,1.056,1.056H7.72l7.26-7.261a3.167,3.167,0,0,1,4.479,0l3.763,3.763V7.667A1.056,1.056,0,0,0,22.166,6.611Zm0,14.778H10.705l5.768-5.767a1.056,1.056,0,0,1,1.493,0l5.157,5.157A1.056,1.056,0,0,1,22.166,21.389Z" fill-rule="evenodd"/>
+    </g>
+    <rect id="Rectangle_616" data-name="Rectangle 616" width="32" height="32" transform="translate(-13762 -15454)" fill="none"/>
+  </g>
+</svg>

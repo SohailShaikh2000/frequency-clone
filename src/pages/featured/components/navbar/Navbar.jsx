@@ -1,10 +1,13 @@
 import React from 'react'
 import '../../../../App.scss'
 
+import { Link } from 'react-router-dom'
+
 //assets
 import Logo from '../../../../assets/logo.png'
 import Bell from '../../../../assets/Bell.svg'
 import Dropdown from '../../../../assets/Expand.svg'
+
 
 const Navbar = () => {
   return (
@@ -15,7 +18,9 @@ const Navbar = () => {
         </div>
         <div className='nav-list'>
           <ul>
-            <li>Wave</li>
+            <Link to="/featured" style={{ textDecoration:"None" }}>
+              <li>Wave</li>
+            </Link>
             <li>Networks</li>
             <li>Messages</li>
           </ul>
