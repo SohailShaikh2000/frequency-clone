@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../featured/components/navbar/Navbar'
+import Navbar from '../../components/layout/header/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
 import FeaturedNav from './components/featuredNavbar/FeaturedNav'
 import '../../App.scss'

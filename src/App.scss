@@ -3,14 +3,14 @@
 @import './components/mainPage/secondComponent/SecondComponent.scss';
 @import './components/mainPage/thirdComponent//ThirdComponent.scss';
 @import './components/mainPage/fourthComponent/FourthComponent.scss';
-@import './components/mainPage/footer/Footer.scss';
+@import './components/layout/footer/Footer.scss';
 @import './pages/loginPage/LoginPage.scss';
-@import './pages/featured/components/navbar/Navbar.scss';
+@import './components/layout/header/Navbar.scss';
 @import './pages/featured/Featured.scss';
 @import './pages/featured/components/dashboard/Dashboard.scss';
-@import './pages/featured/components/navbar/Navbar.scss';
 @import './pages/featured/components/featuredNavbar/FeaturedNav.scss';
 @import './Modals/CreateNetwork/CreateNetworkModal.scss';
+@import './Modals/ActivityFeed/ActivityFeedModal.scss';
 
 $fontLato: "Lato", sans-serif;
 

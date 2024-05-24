@@ -1,9 +1,9 @@
 .modal-wrapper {
   & { height: 99.8vh; width: 99.92vw; background-color: rgba(121, 121, 121, 0.904); position: absolute; z-index: 100; top: 0; left: 0; display: flex; align-items: center; justify-content: center; }
   .modal-container {
-    & { height: 680px; width: 580px; background-color: #fff; border-radius: 10px; padding: 21px; display: flex; flex-direction: column; justify-content: space-around; }
+    & { width: 580px; background-color: #fff; border-radius: 10px; padding: 21px; display: flex; flex-direction: column; justify-content: space-around; gap: 1rem; }
     .modal-heading { 
-      & { display: flex; align-items: center; justify-content: space-between; }
+      & { display: flex; align-items: center; justify-content: space-between; font-family: "Lato", sans-serif; }
       p {
         & { font-size: 24px; font-weight: 400; }
       }

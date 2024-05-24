@@ -8,13 +8,13 @@ const FeaturedNav = () => {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const handleClose = () => {
-    setIsOpen(false)
-  }
+  // const handleClose = () => {
+  //   setIsOpen(false)
+  // }
 
-  const handleOpen = () => {
-    setIsOpen(true)
-  }
+  // const handleOpen = () => {
+  //   setIsOpen(true)
+  // }
 
   return (
     <div className='featured-nav-container'>

@@ -1,0 +1,16 @@
+.modal-description {
+  & { display: flex; gap: 1rem; font-family: "Lato", sans-serif; }
+  .image {
+    & { height: 87px; width: 87px; border-radius: 10px; }
+    img { height: 100%; width: 100%; object-fit: cover; border-radius: 10px; }
+  }
+  .modal-info {
+    & { display: flex;flex-direction: column; align-items: flex-start; justify-content: center; }
+    p { font-size: 16px; font-weight: 600; }
+    .activity-time {
+      & { display: flex; gap: 2rem; }
+      p { font-style: 14px; font-weight: 300; }
+      span { font-size: 22px; display: flex; align-items: center; justify-content: center; }
+    }
+  }
+}

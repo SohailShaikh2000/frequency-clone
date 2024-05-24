@@ -6,8 +6,7 @@ import '../../App.scss'
 import FirstMainPageComponent from '../../components/mainPage/firstComponent/FirstMainPageComponent'
 import SecondComponent from '../../components/mainPage/secondComponent/SecondComponent'
 import ThirdComponent from '../../components/mainPage/thirdComponent/ThirdComponent'
-import Footer from '../../components/mainPage/footer/Footer'
-
+import Footer from '../../components/layout/footer/Footer'
 //assets
 import Logo from '../../assets/logo.png'
 import FourthComponent from '../../components/mainPage/fourthComponent/FourthComponent'

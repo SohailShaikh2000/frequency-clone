@@ -1,15 +1,20 @@
 import React from 'react'
-import '../../../../App.scss'
+import '../../../App.scss'
 
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 //assets
-import Logo from '../../../../assets/logo.png'
-import Bell from '../../../../assets/Bell.svg'
-import Dropdown from '../../../../assets/Expand.svg'
+import Logo from '../../../assets/logo.png'
+import Bell from '../../../assets/Bell.svg'
+import Dropdown from '../../../assets/Expand.svg'
+import ActivityFeedModal from '../../../Modals/ActivityFeed/ActivityFeedModal'
 
 
 const Navbar = () => {
+
+  const [isOpened, setIsOpened] = useState(false)
+
   return (
     <div className='navbar-wrapper'>
       <div className="navbar-container">
@@ -30,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className="nav-icons">
           <div className="bell">
-            <img src={Bell} alt="notifications" />
+            <img src={Bell} alt="notifications" onClick={() => setIsOpened(true)} />
           </div>
           <div className="dropdown">
             <img src={Dropdown} alt="Expand" />
@@ -40,6 +45,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {isOpened && <ActivityFeedModal setIsOpened={setIsOpened} />}
     </div>
   )
 }
